@@ -1,5 +1,9 @@
 <?php
 
+// use FastRoute\Route;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Route;
+
 // Matches "/api/register
 // $router->post('register', 'AuthController@register');
 $router->post('register', ['uses' => 'API\v1\UserController@register']);
@@ -118,3 +122,5 @@ $router->put('telcos/{id}', ['uses' => 'API\v1\TelcoController@update']);//Updat
 $router->delete('telcos/{id}', ['uses' => 'API\v1\TelcoController@delete']);//Delete Telco
 
 URL::forceScheme('https');
+
+$router->get('v1',['uses'=>'API/v1/UgcController@list']);

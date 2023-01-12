@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f03c52ee17ba162f37569ea6315443e",
+    "content-hash": "609fd2fba62bb44d5d07dedf92426eed",
     "packages": [
+        {
+            "name": "coredevina/telcountrycode",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/coredev_ina17/package_telcountrycode.git",
+                "reference": "c3509c1113aa7388733f52d455b5ccc1b219a8f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/coredev_ina17%2Fpackage_telcountrycode/repository/archive.zip?sha=c3509c1113aa7388733f52d455b5ccc1b219a8f7",
+                "reference": "c3509c1113aa7388733f52d455b5ccc1b219a8f7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoreDevina\\Telcountrycode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Permana",
+                    "email": "heripermana88@gmail.com"
+                }
+            ],
+            "description": "Telco Country Code",
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/19011716/issues"
+            },
+            "time": "2020-05-27T04:30:23+00:00"
+        },
         {
             "name": "doctrine/inflector",
             "version": "1.3.1",
@@ -5084,6 +5120,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "coredevina/telcountrycode": 20,
         "tymon/jwt-auth": 20
     },
     "prefer-stable": true,
@@ -5091,5 +5128,6 @@
     "platform": {
         "php": "^7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

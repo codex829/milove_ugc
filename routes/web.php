@@ -11,6 +11,13 @@
 |
 */
 
+use App\Http\Controllers\API\v1\UgcController;
+use FastRoute\Route;
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+// $router->get('/api/v1/reasonlist',[UgcController::class,'list']);
+
+$router->get('api/v1/reasonlist',['uses'=>'API\v1\UgcController@list']);
+$router->post('api/v1/report',['uses'=>'API\v1\UgcController@report']);
